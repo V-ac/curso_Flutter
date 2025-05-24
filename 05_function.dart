@@ -5,6 +5,9 @@ void main () {
   
   print('Suma: ${addTwoNumbers(10, 5)}');
   
+  
+  print( greetPerson( name: 'Verónica' , message: 'Como estas bb? ') );
+  
 }
 
 
@@ -39,7 +42,7 @@ String greetEveryone() => 'Hello everyone!';
 //}
 
 //tarea, a funcion de flecha
-
+//paremtros obligatorios
 int addTwoNumbers(int a,int b) => a + b;
 
 
@@ -55,4 +58,30 @@ int addTwoNumbersOpcion(int a, [int b = 0] ) {
   
   return a + b;
 }
+
+//se convierten en opcionales por {}
+//como son opcionales, alguno de los dos o las dos varibles
+//pueden llegar a ser nulas
+//la palabra recured obliga a quien esta usando la funcion greetPeson introducir el valor si o si pro lo menos ese parametro
+String greetPerson({ required String name, String message='Hola,'}) {
+  return '$message $name';
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
